@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Contrail+One');
+
+.header__container {
+    background-color: #9adaca;
+    font-size: 16px;
+    padding: 15px;
+    font-family: 'Contrail One';
+}
+
+.navBar__menu {
+    display: flex;
+}
+
+.navBar__menuItem:not(:last-child) {
+    margin-right: 10px;
+}
+
+.navBar__menuItem.greetings {
+    color: #565656;
+    margin-right: auto;
+}
+
+.navBar__menuItem a {
+    color: #1c5f4e;
+    text-decoration: none;
+}
+
+.navBar__menuItem a:hover {
+    color: #1c5f4e;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+    .header__container {
+        padding: 15px 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header__container {
+        padding: 15px 50px;
+    }
+}
