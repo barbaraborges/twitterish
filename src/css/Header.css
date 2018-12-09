@@ -9,6 +9,7 @@
 
 .navBar__menu {
     display: flex;
+    align-items: center;
 }
 
 .navBar__menuItem:not(:last-child) {
@@ -16,6 +17,12 @@
 }
 
 .navBar__menuItem.greetings {
+    color: #565656;
+    margin-right: auto;
+}
+
+.navBar__menuItem.title {
+    font-size: 20px;
     color: #565656;
     margin-right: auto;
 }

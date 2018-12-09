@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Header from './Header';
 import '../css/App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <Fragment>
         <Header username="Binha"/>
-      </div>
+      </Fragment>
     );
   }
 }
