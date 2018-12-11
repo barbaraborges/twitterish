@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Contrail+One');
+
 body {
   margin: 0;
   padding: 0;
@@ -12,4 +14,60 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1, h2, h3 {
+  font-family: 'Contrail One';
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+hr {
+  border: 1px dashed #ccc;
+  margin-bottom: 10px;
+}
+
+.contentContainer {
+  display: inline-flex;
+  width: 100%;
+}
+
+.contentBox {
+  margin: 10px;
+  padding: 15px;
+  box-shadow: 3px 3px #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #444;
+}
+
+.sectionWrapper {
+  background-color: #fff;
+  padding: 30px 15px 40px 15px;
+}
+
+@media (min-width: 768px){
+  .sectionWrapper {
+    padding: 30px 25px 40px 25px;
+  }
+}
+
+@media (min-width: 1024px){
+  .sectionWrapper {
+    padding: 30px 15% 40px 15%;
+  }
+
+  .contentContainer {
+    padding: 10px 20px;
+  }
 }

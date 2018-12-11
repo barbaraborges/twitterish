@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Contrail+One');
-
 .header__container {
     background-color: #9adaca;
     font-size: 16px;
@@ -12,19 +10,29 @@
     align-items: center;
 }
 
-.navBar__menuItem:not(:last-child) {
+.navBar__mobileMenu {
+    display: block;
+}
+
+.navBar__menuItem {
+    color: #565656;
+}
+
+.navBar__menuItem:not(:last-child):not(.navBar__title) {
     margin-right: 10px;
 }
 
-.navBar__menuItem.greetings {
-    color: #565656;
-    margin-right: auto;
+.navBar__menuItem:not(.navBar__mobileMenu),
+.navBar__menuItem:not(.navBar__title) {
+    display: none;
 }
 
-.navBar__menuItem.title {
-    font-size: 20px;
+.navBar__title {
+    font-size: 26px;
     color: #565656;
+    margin-left: auto;
     margin-right: auto;
+    text-shadow: 1px 1px #fff;
 }
 
 .navBar__menuItem a {
@@ -40,6 +48,14 @@
 @media screen and (min-width: 768px) {
     .header__container {
         padding: 15px 30px;
+    }
+
+    .navBar__mobileMenu {
+        display: none;
+    }
+
+    .navBar__menuItem:not(.navBar__mobileMenu) {
+        display: flex;
     }
 }
 

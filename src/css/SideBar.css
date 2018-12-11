@@ -1,0 +1,14 @@
+.sideBar {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .sideBar {
+        display: block;
+        width: 35%;
+    }
+
+    .sideBar__header {
+        margin-bottom: 10px;
+    }
+}
