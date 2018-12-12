@@ -4,7 +4,8 @@
 
 @media (min-width: 768px) {
     .sideBar {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         width: 35%;
     }
 

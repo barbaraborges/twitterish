@@ -1,5 +1,5 @@
 .tweetsBar__container {
-    width: 100%;
+    width: calc(65% - 20px);
 }
 
 .tweetsBar__header {

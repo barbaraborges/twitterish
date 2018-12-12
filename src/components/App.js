@@ -3,6 +3,7 @@ import Header from './Header';
 import '../css/App.css';
 import SideBar from './SideBar';
 import TweetsBar from './TweetsBar';
+import Tweet from './Tweet';
 
 class App extends Component {
   render() {
@@ -12,7 +13,7 @@ class App extends Component {
         <div class="contentContainer">
           <SideBar followers="3" following="40" />
           <TweetsBar>
-            
+            <Tweet/>
           </TweetsBar>
         </div>
       </Fragment>

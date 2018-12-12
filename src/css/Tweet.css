@@ -1,0 +1,15 @@
+.tweet__container {
+    font-size: 14px;
+}
+
+.tweet__input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    resize: none;
+    width: 100%;
+}
+
+.tweet__input:focus {
+    outline: #ddd auto 5px;
+}
