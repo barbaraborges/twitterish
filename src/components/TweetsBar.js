@@ -1,5 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import '../css/TweetsBar.css';
+import NewTweet from './NewTweet';
+import Tweet from './Tweet';
 
 class TweetsBar extends Component {
     render(){
@@ -8,7 +10,9 @@ class TweetsBar extends Component {
                 <div className="tweetsBar__container contentBox">
                     <h1 className="tweetsBar__header">What's up?</h1>
                     <hr/>
-                    {this.props.children}
+                    <NewTweet />
+                    <hr/>
+                    <Tweet/>
                 </div>
             </Fragment>
         );

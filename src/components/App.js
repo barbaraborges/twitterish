@@ -3,6 +3,7 @@ import Header from './Header';
 import '../css/App.css';
 import SideBar from './SideBar';
 import TweetsBar from './TweetsBar';
+import NewTweet from './NewTweet';
 import Tweet from './Tweet';
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
         <div class="contentContainer">
           <SideBar followers="3" following="40" />
           <TweetsBar>
+            <NewTweet/>
             <Tweet/>
           </TweetsBar>
         </div>

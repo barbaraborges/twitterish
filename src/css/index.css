@@ -35,7 +35,27 @@ h3 {
 
 hr {
   border: 1px dashed #ccc;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #1c5f4e;
+}
+
+a:hover {
+  color: #565656;
+}
+
+button {
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: #ccc solid 1px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .contentContainer {
