@@ -7,7 +7,7 @@ class Tweet extends Component {
             <div className="tweet__container">
                 <div className="tweet__authorPic"></div>
                 <div className="tweet__contentContainer">
-                    <h3 className="tweet__authorName">Binha</h3>
+                    <div className="tweet__authorName">Binha</div>
                     <div class="tweet__text">
                         Life sucks!1
                     </div>

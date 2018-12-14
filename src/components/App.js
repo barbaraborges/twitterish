@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import Header from './Header';
-import '../css/App.css';
 import SideBar from './SideBar';
 import TweetsBar from './TweetsBar';
 import NewTweet from './NewTweet';
