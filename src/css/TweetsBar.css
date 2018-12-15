@@ -1,7 +1,1 @@
-.tweetsBar__container {
-    width: calc(65% - 20px);
-}
-
-.tweetsBar__header {
-    margin-bottom: 15px;
-}
+@import"https://fonts.googleapis.com/css?family=Contrail+One";.tweetsBar__container{width:calc(65% - 20px)}.tweetsBar__header{margin-bottom:15px}/*# sourceMappingURL=TweetsBar.css.map */

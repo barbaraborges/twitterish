@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react';
 import '../css/Tweet.css';
 
 class Tweet extends Component {
+
     render() {
         return (
             <div className="tweet__container">

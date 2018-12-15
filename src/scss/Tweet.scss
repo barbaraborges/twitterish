@@ -46,10 +46,21 @@
 
 .tweet__authorName {
     font-size: 16px;
-    font-family: $highlightFont;
+    font-family: $headerFont;
     color: $darkGreen;
 }
 
 .tweet__text {
 
+}
+
+.tweet__charCounter {
+    display: flex;
+    font-size: 12px;
+    margin-left: auto;
+    width: fit-content;
+}
+
+.tweet__charCounter--invalid {
+    color: $danger;
 }
