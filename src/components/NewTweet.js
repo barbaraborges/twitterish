@@ -12,11 +12,16 @@ class NewTweet extends Component {
     render(){
         return(
             <Fragment>
-                <span className={`tweet__charCounter ${ this.state.newTweet.length > 140 ? 'tweet__charCounter--invalid' : ''}`}>0/140 characters</span>
+                <span className={`tweet__charCounter ${ this.state.newTweet.length > 140 ? 'tweet__charCounter--invalid' : ''}`}>{ this.state.newTweet.length }/140 characters</span>
                 <form type="POST" action="">
-                    <textarea className="tweet__input" placeholder="Spread the word!" rows="4" 
-                        value={ this.state.newTweet } />
-                    <button className="tweet__button">Post</button>
+                    <textarea className="tweet__input" rows="4" 
+                        placeholder="Spread the word!"
+                        value={ this.state.newTweet } 
+                        onChange={ (event) => this.setState({ newTweet: event.target.value }) }
+                        onInput={ (event) => this.setState({ newTweet: event.target.value })}/>
+                    <button className="tweet__button"
+                            disabled={ this.state.newTweet.length > 140 }
+                            onClick={ () => this.props.oldTweets.setState({ oldTweets: [this.state.newTweet]}) }>Post</button>
                 </form>
             </Fragment>
         );

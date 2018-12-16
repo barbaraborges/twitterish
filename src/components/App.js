@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <Fragment>
         <Header username="Binha"/>
-        <div class="contentContainer">
+        <div className="contentContainer">
           <SideBar followers="3" following="40" />
           <TweetsBar>
             <NewTweet/>

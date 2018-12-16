@@ -9,8 +9,8 @@ class Tweet extends Component {
                 <div className="tweet__authorPic"></div>
                 <div className="tweet__contentContainer">
                     <div className="tweet__authorName">Binha</div>
-                    <div class="tweet__text">
-                        Life sucks!1
+                    <div className="tweet__text">
+                        { this.props.content }
                     </div>
                 </div>
             </div>

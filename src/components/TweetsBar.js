@@ -4,15 +4,30 @@ import NewTweet from './NewTweet';
 import Tweet from './Tweet';
 
 class TweetsBar extends Component {
+    constructor() {
+        super();
+        this.state = {
+            oldTweets: []
+        }
+    }
+
     render(){
         return(
             <Fragment>
                 <div className="tweetsBar__container contentBox">
                     <h1 className="tweetsBar__header">What's up?</h1>
                     <hr/>
-                    <NewTweet />
-                    <hr/>
-                    <Tweet/>
+                    <NewTweet oldTweets={this.state.oldTweets } />
+
+                    { this.state.oldTweets.map(
+                        tweet => { return (
+                            <Fragment>
+                                <hr/>
+                                <Tweet content={ tweet }/>
+                            </Fragment>
+                        ) }
+                    ) }
+            
                 </div>
             </Fragment>
         );

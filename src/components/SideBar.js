@@ -5,7 +5,7 @@ class SideBar extends Component {
 
     render(){
         return(
-            <div class="sideBar">
+            <div className="sideBar">
                 <div className="contentBox">
                     <h2 className="sideBar__header">Your stuff</h2>
                     <hr/>
