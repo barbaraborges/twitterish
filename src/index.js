@@ -4,6 +4,7 @@ import './css/reset.css';
 import './css/index.css';
 import App from './pages/App';
 import About from './pages/About';
+import PageNotFound from './pages/PageNotFound'
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
@@ -12,6 +13,7 @@ ReactDOM.render(
         <Switch>
             <Route path="/" component={ App } exact />
             <Route path="/about" component={ About } exact />
+            <Route path="*" component={ PageNotFound }/>
         </Switch>
     </BrowserRouter>
     
