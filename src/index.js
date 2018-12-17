@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import './css/reset.css';
 import './css/index.css';
@@ -9,13 +9,15 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 ReactDOM.render(
-    <BrowserRouter>
-        <Switch>
-            <Route path="/" component={ App } exact />
-            <Route path="/about" component={ About } exact />
-            <Route path="*" component={ PageNotFound }/>
-        </Switch>
-    </BrowserRouter>
+    <Fragment>
+        <BrowserRouter>
+            <Switch>
+                <Route path="/" component={ App } exact />
+                <Route path="/about" component={ About } exact />
+                <Route path="*" component={ PageNotFound }/>
+            </Switch>
+        </BrowserRouter>
+    </Fragment>
     
     , document.getElementById('root'));
 
