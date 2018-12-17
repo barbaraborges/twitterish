@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react';
-import Header from './Header';
-import SideBar from './SideBar';
-import TweetsBar from './TweetsBar';
-import NewTweet from './NewTweet';
-import Tweet from './Tweet';
+import Header from '../components/Header';
+import SideBar from '../components/SideBar';
+import TweetsBar from '../components/TweetsBar';
+import NewTweet from '../components/NewTweet';
+import Tweet from '../components/Tweet';
 
 class App extends Component {
   render() {

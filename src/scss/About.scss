@@ -1,0 +1,13 @@
+@import 'variables';
+
+.page__about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 18px;
+    line-height: 2em;
+    color: $darkGreen;
+}
