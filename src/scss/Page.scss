@@ -1,13 +1,26 @@
 @import 'variables';
 
-.page__info {
+.content-centered-page {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: calc(100vh - 63px);
+}
+
+.page__info {
     text-align: center;
     font-size: 18px;
     line-height: 2em;
     color: $darkGreen;
+}
+
+.login__container {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .login__container {
+        width: 400px;
+    }
 }

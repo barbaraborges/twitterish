@@ -28,12 +28,11 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 10px;
-    resize: none;
     width: 100%;
 }
 
 .tweet__input:focus {
-    outline: #ddd auto 5px;
+
 }
 
 .tweet__button {
@@ -43,7 +42,6 @@
     background-color: #545454;
     color: #fff;
     font-size: 12px;
-    text-transform: uppercase;
 }
 
 .tweet__authorPic {

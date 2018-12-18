@@ -33,7 +33,7 @@ class TweetsBar extends Component {
                                                     <hr/>
                                                     <Tweet content={ tweet }  />
                                                 </Fragment>
-                                                ) };
+                                            )};
 
     render(){
 

@@ -7,7 +7,7 @@ class PageNotFound extends Component {
     render(){
         return( 
             <Layout>
-                <div className="page__info">
+                <div className="content-centered-page page__info">
                     <div className="page__content">
                         <h1>404</h1>
                         Page Not Found

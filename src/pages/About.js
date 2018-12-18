@@ -7,7 +7,7 @@ class About extends Component {
     render(){
         return( 
                 <Layout>
-                    <div className="page__info">
+                    <div className="content-centered-page page__info">
                         <div className="page__content">
                             This app was created by Barbara Borges for educational purposes.<br/>
                             All code is under the MIT lincense.<br/>

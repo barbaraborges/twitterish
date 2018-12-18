@@ -21,7 +21,7 @@ class NewTweet extends Component {
                         onInput={ (event) => this.setState({ newTweet: event.target.value })}/>
                     <button className="tweet__button"
                             disabled={ this.state.newTweet.length > 140 }
-                            onClick={ () => this.props.oldTweets.setState({ oldTweets: [this.state.newTweet]}) }>Post</button>
+                            onClick={ () => this.props.setState({ oldTweets: [this.state.newTweet]}) }>Post</button>
                 </form>
             </Fragment>
         );

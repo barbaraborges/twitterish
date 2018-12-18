@@ -1,0 +1,37 @@
+@import 'variables';
+
+.login__container {
+    padding: 20px;
+    background-color: #9adbca;
+}
+
+.login__title {
+    text-align: center;
+    color: $darkGreen;
+}
+
+.login__label {
+    color: $darkGreen;
+    font-size: 12px;
+}
+
+.login__input {
+    width: 100%;
+}
+
+.login__submit-button {
+    background-color: $darkGray;
+    border: 1px transparent;
+    color: #fff;
+    opacity: 0.9;
+    display: flex;
+    margin: 8px auto;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
+
+.login__submit-button:hover {
+    opacity: 1;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+}
