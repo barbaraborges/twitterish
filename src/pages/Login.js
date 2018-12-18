@@ -8,8 +8,8 @@ class Login extends Component {
 
     login = (event) => {
         event.preventDefault();
-        console.log(this.inputUsername)
-        console.log(this.inputPassword)
+        //console.log(this.inputUsername.value);
+        //console.log(this.inputPassword.value)
 
         const loginData = {
             username: this.inputUsername.value,
