@@ -7,8 +7,10 @@ class TweetsBar extends Component {
     constructor() {
         super();
         this.state = {
-            newTweet: '',
-            oldTweets: []
+            newTweet: '', //new message
+            oldTweets: [],
+            user: "Binha", //mockup
+            authorPic: 'https://lh3.googleusercontent.com/-JXsdOCc8bBo/AAAAAAAAAAI/AAAAAAAAAAA/AKxrwcbPbpLIIeo4yUm6vIa67nuGBRXS7A/s64-c-mo/photo.jpg'
         }
 
         this.addTweet = this.addTweet.bind(this);
@@ -18,20 +20,26 @@ class TweetsBar extends Component {
     addTweet(event) {
         event.preventDefault();
 
-        const newTweet = this.state.newTweet;
+        const newTweet = {
+            content: this.state.newTweet,
+            author: this.state.user,
+            authorPic: this.state.authorPic
+        };
         const oldTweets = this.state.oldTweets;
 
-        if(newTweet) {
+        if(newTweet.content) {
             this.setState({
                 oldTweets: [ newTweet, ...oldTweets ],
                 newTweet: ''
             });
         }
+
+        console.log(newTweet);
     }
 
     renderTweets = (tweet, index) => { return ( <Fragment key={ index }>
                                                     <hr/>
-                                                    <Tweet content={ tweet }  />
+                                                    <Tweet author={ tweet.author} content={ tweet.content } authorPic={tweet.authorPic} />
                                                 </Fragment>
                                             )};
 
@@ -46,7 +54,7 @@ class TweetsBar extends Component {
         }
 
         else tweetsList = ( <div className="tweet__container">
-                                <div className="tweet__info">No tweets yet!</div>
+                                <div className="tweetsBar__info">No tweets yet!</div>
                             </div>);
 
         return(

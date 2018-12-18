@@ -8,16 +8,29 @@
 }
 
 .tweet__contentContainer {
-    background-color: $lightestGray;
-    display: block;
-    padding: 5px 10px;
     width: calc(100% - 60px);
     margin-left: 10px;
 }
 
-// show possible messages instead of a tweet
+.tweet__body {
+    background-color: $lightestGray;
+    display: block;
+    padding: 5px 10px;
+}
 
-.tweet__info {
+.tweet__footer {
+    display: flex;
+    font-size: 12px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.tweet__info { //info on footer
+    color: $darkGray;
+    margin-left: auto;
+}
+
+.tweetsBar__info { // shows possible messages instead of a tweet
     width: 100%;
     align-self: center;
     text-align: center;
@@ -49,6 +62,7 @@
     height: 50px;
     width: 50px;
     background-color: #ccc;
+    overflow: hidden;
 }
 
 .tweet__authorName {
@@ -70,4 +84,24 @@
 
 .tweet__charCounter--invalid {
     color: $danger;
+}
+
+.tweet__likeButton {
+    border: 0;
+    font-weight: 100;
+    padding: 2px;
+    outline: none;
+
+    .fas {
+        font-weight: 100;
+    }
+}
+
+.tweet__likeButton:hover {
+    border: 0;
+    color: $danger;
+
+    .fas {
+        font-weight: 900;
+    }
 }
